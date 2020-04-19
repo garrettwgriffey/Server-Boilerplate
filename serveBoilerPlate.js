@@ -26,6 +26,8 @@ server.listen(PORT, function() {
 });
 
 
+------------------------------------------------------------------------------------------------------------
+
 // ANOTHER EXAMPLE
 
 var express = require("express");
@@ -86,3 +88,23 @@ require("./routes/htmlRoutes")(app);
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
+
+-----------------------------------------------------------------------------------------------------------------------------
+  
+  example 3 from Traversy "bare-bones server"
+  
+const express = require('express');
+
+// init express
+const app = express();
+
+// create your endpoints/routes handlers
+app.get('/', function(req, res) {
+  res.send('Hello World!');
+});
+
+// listen on a port
+app.listen(5000);
+
+
+
